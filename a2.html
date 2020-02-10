@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <!-- Please read my NoteOnTheDesign.pdf before looking at my code. -->
+    <meta charset="utf-8" />
+    <title> Tap Tap Bug </title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script language="javascript" type="text/javascript" src="game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/t/5/t5vnyrdea9.ico" type="image/x-icon" />
+    <!-- Pictures from: http://www.stephendweck.com/img/content/logo-bug.png -->
+</head>
+
+<body>
+    <!-- Start Page : show when the device is loaded -->
+    <div id="bigwrapper">
+        <section id="startpage">
+            <header>
+                <h1> Main Menu </h1>
+            </header>
+            <form>
+                <div id="options"> Level:
+                    <input type="radio" name="levelbutton" id="radioone" value="level1"> 1
+                    <input type="radio" name="levelbutton" id="radiotwo" value="level2"> 2
+                </div>
+            </form>
+
+            <!-- Preserve for displaying high score. -->
+            <h3 id="highscore"> </h3>
+            <button type="button" id="startbutton"> Start </button>
+        </section>
+
+        <!-- Game Page : not show at the beginning. -->
+        <section id="gamepage">
+            <!-- Information bar -->
+            <div id="infobar">
+                <div id="timesection">
+                    <p id="timecounter"></p>
+                </div>
+                <div id="pausesection">
+                    <h3 id="pausebutton"> Pause </h3>
+                </div>
+                <div id="scoresection">
+                    <p id="currentscore"> </p>
+                </div>
+            </div>
+
+            <!-- Game View Port -->
+            <div id="viewport">
+                <canvas id="gamecanvas" height="600" width="400">
+                </canvas>
+            </div>
+        </section>
+        
+        <!-- Score Display PopUp Show After Level 1 -->
+        <section id="level1popup">
+            <h2 id="level1score"> </h2>
+            <h2> Preceding to Level 2 </h2>
+        </section>
+        
+        <!-- Game Over PopUp Not Show At The Beginning -->
+        <section id="gameoverpopup">
+            <h1> Game Over </h1>
+
+            <!-- Preserve for displaying score -->
+            <h2 id="finalscore"> </h2>
+            <div>
+                <h3 id="restartbutton"> Restart </h3>
+            </div>
+            <div>
+                <h3 id="exitgamebutton"> Exit </h3>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

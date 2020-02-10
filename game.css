@@ -1,0 +1,156 @@
+/* Please read my NoteOnTheDesign.pdf before looking at my code. */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+#options {
+    font-size: 20px;
+    font-style: bold;
+}
+
+#bigwrapper {
+    position: relative;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Start Page */
+#startpage {
+    position: relative;
+    height: 40%;
+    width: 50%;
+    border: 5px double deepskyblue;
+    border-radius: 5px;
+    text-align: center;
+    background-color: bisque;
+    padding: 15px;
+    margin: 5px;
+    display: block;
+}
+
+/* Start Game Button */
+#startbutton {
+    margin: 2px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px; 
+    color: black;
+    border-radius: 5px;
+    border: 2px solid deepskyblue;
+    background-color: azure;
+    padding: 15px;
+}
+
+#startbutton:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+
+/* Game Page */
+#gamepage {
+    /* Not display at the beginning */
+    display: none; 
+    /* 400x60 for the info bar and 400x600 is the game view port */
+    height: 660px;  
+    width: 400px;
+    border: 5px solid deepskyblue;
+    border-radius: 8px;
+}
+
+/* Info bar */
+#infobar {
+    border-bottom: 2px solid deepskyblue;
+    height: 60px;
+    width: 400px;
+    text-align: center;
+    color: blue;
+    background-color: greenyellow;
+    font-weight: bold;
+}
+
+#pausebutton {
+    position: relative;
+    padding: 5px;
+    border: 2px solid deepskyblue;
+    width: 80px;
+    border-radius: 5px;
+    background-color: azure;
+    margin-bottom: 3px;
+}
+
+#pausebutton:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+#timesection, #pausesection, #scoresection {
+    display: inline-block;
+    margin-bottom: 7px;
+    width: 120px;
+} 
+
+#scoresection {
+    margin-top: 2px;
+}
+
+/* View port */
+#viewport {
+    height: 600px;
+    width: 400px; 
+    background-color: palegoldenrod;
+}
+
+/* Game Over Popup */
+#gameoverpopup {
+    display: none;
+    text-align: center;
+    border: 10px double antiquewhite;
+    border-radius: 5px;
+    background-color: greenyellow;
+    position: relative;
+    width: 300px;
+    top: -500px;
+    left: 50px;
+    opacity: 0.8;
+    color: mediumblue;
+
+}
+
+/* End game buttons. */
+#restartbutton, #exitgamebutton {
+    border: 2px solid deepskyblue;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: floralwhite;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#restartbutton:hover, #exitgamebutton:hover {
+    padding: 25px;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+/* Level 1 Popup */
+#level1popup {
+    display: none;
+    text-align: center;
+    border: 10px double skyblue;
+    border-radius: 5px;
+    background-color: limegreen;
+    position: relative;
+    width: 300px;
+    top: -500px;
+    left: 50px;
+    opacity: 0.8;
+    color: blue;
+}
+
